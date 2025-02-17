@@ -6,41 +6,122 @@ const questions = [
   {
     id: 1,
     text: "It's a sunny afternoon. What are you doing?",
+    image: "https://i.ytimg.com/vi/qeOa_OcB3DE/hqdefault.jpg",
     options: [
-      { text: "Lounging in a sunbeam", traits: { lazy: 2, comfort: 1 }, image: "https://files.oaiusercontent.com/file-15UYHo5gvkZG8oDfwwrbgd?se=2025-02-16T06%3A32%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Db9f51be6-21a5-4b0b-86ae-a29a080555bd.webp&sig=lJCHL6xEDvwQpOHIbXk1%2B9%2BNNT6izfiMyROgOEFZUdc%3D" },
-      { text: "Hunting bugs in the garden", traits: { adventurous: 2, playful: 1 }, image: "https://files.oaiusercontent.com/file-8GNg5CEByLpHx3CVqVqUHk?se=2025-02-16T06%3A32%3A54Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbc010941-de62-45df-8e48-15463c08790a.webp&sig=JcfPVbkDJmh%2BPx4OB%2Bpq/ftpR9DQx2li4EthVdQsEkQ%3D"},
-      { text: "Watching birds from the windowsill", traits: { curious: 2, cautious: 1 }, image: "https://files.oaiusercontent.com/file-XoQavebMVjSp2Tsz6yQ2pb?se=2025-02-16T06%3A35%3A22Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D33565ba0-9883-4209-999f-1b952c743077.webp&sig=QtQbnn/LVAsUJ5v3d3aqGKPhmBTJfbjo0Ito1oCIsjE%3D"},
-      { text: "Napping on your human's laptop", traits: { mischievous: 2, attention: 1 }, image: "https://files.oaiusercontent.com/file-PRyRn5QXMtaXaCB7fJ1hd8?se=2025-02-16T06%3A38%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D54875815-d9f0-4861-a7f9-e1709285c61e.webp&sig=NCfkd6LST17/YwQTjnZE6y4kjRz8LqQCfwHvGzGpm2o%3D"}
+      { text: "Lounging in a sunbeam", traits: { lazy: 2, comfort: 1 } },
+      { text: "Hunting bugs in the garden", traits: { adventurous: 2, playful: 1 } },
+      { text: "Watching birds from the windowsill", traits: { curious: 2, cautious: 1 } },
+      { text: "Napping on your human's laptop", traits: { mischievous: 2, attention: 1 } }
     ]
   },
   {
     id: 2,
     text: "Your human brings home a new toy. What's your reaction?",
+    image: "https://preview.redd.it/my-new-kittens-reaction-to-his-first-toy-v0-ype94n6ruz0c1.jpg?width=1080&crop=smart&auto=webp&s=f018eb20ae79c262edb2c19561ed445589f965bf",
     options: [
-      { text: "Immediately pounce and play with it", traits: { playful: 2, energetic: 1 }, image: "https://files.oaiusercontent.com/file-NqudeKw3afd3QJqsG6EWEH?se=2025-02-16T06%3A38%3A42Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df4f15c73-4d8d-4db5-ac96-5bfd1fd6d603.webp&sig=YeJu3eIvA1jk5bTwJAI/NYIaa4dj4JndX5hyxkBIy4c%3D" },
-      { text: "Carefully inspect it from a distance", traits: { cautious: 2, intelligent: 1 }, image: "https://files.oaiusercontent.com/file-37xRicTozR2WBToL9wJNiW?se=2025-02-16T06%3A38%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D15318d99-8708-4362-b46c-9ae95a971808.webp&sig=15zvg52d%2BOOXfsrQ/zX4PCCc9Okk%2B%2BXRh1IvCxNQwcI%3D" },
-      { text: "Ignore it completely", traits: { aloof: 2, independent: 1 }, image: "https://files.oaiusercontent.com/file-8ChVSCPLvDMngmMoJPjf9h?se=2025-02-16T06%3A38%3A56Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbf698207-ff29-4604-b0ea-5e0940abd5d3.webp&sig=V2jTRZPekdb/dAr6mJVJmgCw9vZKXJrqKIgXlGMsFyM%3D" },
-      { text: "Wait for your human to play with you", traits: { social: 2, attention: 1 }, image: "https://files.oaiusercontent.com/file-Wk6wZks4bQkjB2u9EBw1q8?se=2025-02-16T06%3A39%3A03Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3b457945-f20b-49d0-865f-1bd1c19c70c0.webp&sig=xlFPkQG8H4ohAWDUjmaugLhHB4MMQDD95Qa3Ic7sVH8%3D"}
+      { text: "Immediately pounce and play with it", traits: { playful: 2, energetic: 1 } },
+      { text: "Carefully inspect it from a distance", traits: { cautious: 2, intelligent: 1 } },
+      { text: "Ignore it completely", traits: { aloof: 2, independent: 1 } },
+      { text: "Wait for your human to play with you", traits: { social: 2, attention: 1 } }
     ]
   },
   {
     id: 3,
     text: "It's dinner time! What's your style?",
+    image: "https://static.displate.com/270x380/displate/2024-01-29/4c6f5983adbb495fb4cf851fd6162d7e_af5953f4cf060bd542770e6ff556d8aa.jpg",
     options: [
-      { text: "Meow loudly until food appears", traits: { demanding: 2, vocal: 1 }, image: "https://files.oaiusercontent.com/file-1GeT2VgEeCKb9dGKe6dt86?se=2025-02-16T06%3A39%3A14Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D5546bd94-76cf-46ec-8094-f2cff48a4b36.webp&sig=uGg1x18pPHODQk31ERpZphVTSJg1hQS5NiKv1lKOVpA%3D" },
-      { text: "Wait patiently by your bowl", traits: { gentle: 2, patient: 1 }, image: "https://files.oaiusercontent.com/file-N3wopSBhqp1vv6tz8ZzUar?se=2025-02-16T06%3A39%3A20Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbf5b0928-9add-42a3-aab1-89f390e60a10.webp&sig=DBbqS6WoEoC1a6uqR6JPHbpE08eDniZspf6xCpD06Tc%3D"},
-      { text: "Try to steal food from the counter", traits: { mischievous: 2, clever: 1 }, image: "https://files.oaiusercontent.com/file-FwrRi7puA5ZMupHUMn4YjF?se=2025-02-16T06%3A39%3A27Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D79ad1fef-3705-4fca-9e4a-57eabcabed10.webp&sig=5RaiXzZbZf7jlkGKdw/jpO4d3%2B3asynYd1RLB1rwANI%3D"},
-      { text: "Eat a little, save some for later", traits: { cautious: 2, practical: 1 }, image: "https://files.oaiusercontent.com/file-EHd4t6dDsY4z85FFNcY5k3?se=2025-02-16T06%3A39%3A35Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D6ccb4bab-5638-4c98-86ec-bc73232fee66.webp&sig=lCwJQSoa3WmmT9zr1k5COClQzImKEDDioGOoqMS7f8s%3D" }
+      { text: "Meow loudly until food appears", traits: { demanding: 2, vocal: 1 } },
+      { text: "Wait patiently by your bowl", traits: { gentle: 2, patient: 1 } },
+      { text: "Try to steal food from the counter", traits: { mischievous: 2, clever: 1 } },
+      { text: "Eat a little, save some for later", traits: { cautious: 2, practical: 1 } }
     ]
   },
   {
     id: 4,
     text: "A stranger visits your home. What do you do?",
+    image: "https://d.newsweek.com/en/full/1978911/front-door.jpg",
     options: [
-      { text: "Hide under the bed", traits: { shy: 2, cautious: 1 }, image: "https://files.oaiusercontent.com/file-FGJHjMJsYxbzyV8tiRLJw8?se=2025-02-16T06%3A39%3A42Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D1f7426f5-07af-4d44-be29-68c6d43a0d40.webp&sig=/WyyFmDYjVcIUbhpoT6Z2xbPq9j5rGXbW19pJZpql2s%3D" },
-      { text: "Greet them enthusiastically", traits: { social: 2, friendly: 1 }, image: "https://files.oaiusercontent.com/file-Jc6vXsHQyvNW8kTdF8C5rV?se=2025-02-16T06%3A39%3A52Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da2fd96c0-27ea-4c1c-8a25-5cb5749f2f55.webp&sig=SUay5o8eVWrh9otMVkPLOt1WQa0ji8bbYMF41FjSecc%3D"},
-      { text: "Watch from a high perch", traits: { curious: 2, independent: 1 }, image: ""},
-      { text: "Demand pets immediately", traits: { attention: 2, confident: 1 }, image: ""}
+      { text: "Hide under the bed", traits: { shy: 2, cautious: 1 } },
+      { text: "Greet them enthusiastically", traits: { social: 2, friendly: 1 } },
+      { text: "Watch from a high perch", traits: { curious: 2, independent: 1 } },
+      { text: "Demand pets immediately", traits: { attention: 2, confident: 1 } }
+    ]
+  },
+  {
+  id: 5,
+  text: "A new cat has entered your territory. How do you respond?",
+  image: "https://www.lifewithcats.tv/wp-content/uploads/2023/09/Territorial-Cats-About-to-Fight.jpg",
+  options: [
+    { text: "Hiss and keep your distance", traits: { independent: 1, mysterious: 2 } },
+    { text: "Curiously sniff and approach", traits: { playful: 2, intelligent: 1 } },
+    { text: "Indifferent, continue with your activities", traits: { independent: 3 } },
+    { text: "Start playing with the new cat", traits: { social: 2, energetic: 1 } }
+  ]
+},
+  {
+    id: 6,
+    text: "Your favorite toy is stuck under the couch. What's your next move?",
+    image: "https://media.wired.com/photos/6616c08b630a7060d3bd0dfa/master/pass/Best-Cat-Toys-Gear-GettyImages-1456903581.jpg",
+    options: [
+      { text: "Paw relentlessly until you retrieve it", traits: { energetic: 2, clever: 1 } },
+      { text: "Meow for help", traits: { vocal: 3 } },
+      { text: "Move on to another toy", traits: { independent: 2, clever: 1 } },
+      { text: "Wait and watch, hoping it comes out on its own", traits: { lazy: 2, comfort: 1 } }
+    ]
+  },
+  {
+    id: 7,
+    text: "You hear a loud noise outside. How do you react?",
+    image: "https://blog.nature.org/wp-content/uploads/2022/03/4252913158_a1a6ccaf55_k-1.jpg?w=1024",
+    options: [
+      { text: "Instantly hide", traits: { gentle: 2, independent: 1 } },
+      { text: "Look out the window to investigate", traits: { adventurous: 1, intelligent: 2 } },
+      { text: "Unbothered, continue sleeping", traits: { lazy: 2, comfort: 1 } },
+      { text: "Run to your human for protection", traits: { social: 2, gentle: 1 } }
+    ]
+  },
+  {
+    id: 8,
+    text: "It's grooming time. What is your approach?",
+    image: "https://image.petmd.com/files/styles/863x625/public/2025-01/cat-overgrooming.jpg",
+    options: [
+      { text: "Thoroughly clean every inch", traits: { gentle: 2, comfort: 1 } },
+      { text: "Quick wash and done", traits: { lazy: 2, comfort: 1 } },
+      { text: "Ignore grooming, it's playtime instead", traits: { energetic: 2, playful: 1 } },
+      { text: "Let your human help with grooming", traits: { social: 2, gentle: 1 } }
+    ]
+  },
+  {
+    id: 9,
+    text: "You've found a sunny spot. How long will you stay there?",
+    image: "https://legacyturffarms.com/wp-content/uploads/2022/06/grass-growing-under-a-sunet.jpg",
+    options: [
+      { text: "All day, if undisturbed", traits: { lazy: 3 } },
+      { text: "A few minutes, then it's adventure time", traits: { energetic: 2, adventurous: 1 } },
+      { text: "Until something more interesting catches your eye", traits: { curious: 2, intelligent: 1 } },
+      { text: "Rotate between sunny spots and shade", traits: { independent: 2, clever: 1 } }
+    ]
+  },
+  {
+    id: 10,
+    text: "There's an open window with a screen. What do you do?",
+    image: "https://blog.newanglebeveling.com/hubfs/Window%20screens.jpg",
+    options: [
+      { text: "Sit and watch the world outside", traits: { curious: 2, intelligent: 1 } },
+      { text: "Try to claw through the screen", traits: { mischievous: 1, adventurous: 2 } },
+      { text: "Ignore it, there are better things to do inside", traits: { independent: 3 } },
+      { text: "Meow to go outside", traits: { vocal: 2, social: 1 } }
+    ]
+  },
+  {
+    id: 11,
+    text: "You're left alone at home. What's your plan?",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNy9XAGmiMsrS-d63ZCMbJrWyH2tyl55JqjgcWN7hD9SUxNTfImt03m2N0KeMx9jHkDR9qRCjjv-vj9JCQjqvhiYN9-gGYe_IVodeHGVtokpI1UOIXFbdry1uiVX6nRyo_Wmo_twL1G0uz/s1600/zze.jpg",
+    options: [
+      { text: "Sleep in your favorite hidden spot", traits: { lazy: 2, comfort: 1 } },
+      { text: "Explore areas you usually can't", traits: { adventurous: 2, curious: 1 } },
+      { text: "Knock things off to see if anyone notices", traits: { mischievous: 2, playful: 1 } },
+      { text: "Wait by the door for your human to return", traits: { social: 2, gentle: 1 } }
     ]
   }
 ];
@@ -81,29 +162,32 @@ const Stage = ({ currentQuestion, onAnswer, progress }) => {
       />
       <LinearProgress variant="determinate" value={progress} className="w-full" />
       <CardContent>
-        <div className="grid grid-cols-1 gap-4">
+        <div className="flex justify-center mb-6">
+          <img
+            src={currentQuestion.image}
+            style={{ width: '200px', height: '200px', objectFit: 'contain' }}
+            alt="Question"
+          />
+        </div>
+
+        <div className="flex flex-wrap gap-4">
           {currentQuestion.options.map((option, index) => (
-            <Button
-              key={index}
-              variant="outlined"
-              className="w-full p-4 h-auto text-left"
-              onClick={() => onAnswer(option.traits)}
-            >
-              {option.image && (
-                <img 
-                  src={option.image}
-                  alt={option.text} 
-                  className="mb-2 w-full object-cover"
-                 />
-              )}
-              {option.text}
-            </Button>
+            <div key={index} className="w-1/2">
+              <Button
+                variant="outlined"
+                className="w-full p-4 text-left"
+                onClick={() => onAnswer(option.traits)}
+              >
+                {option.text}
+              </Button>
+            </div>
           ))}
         </div>
       </CardContent>
     </Card>
   );
 };
+
 
 const Result = ({ traits }) => {
   const calculateCatType = () => {
